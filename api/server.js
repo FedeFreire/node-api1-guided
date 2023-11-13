@@ -148,7 +148,7 @@ server.delete("/api/dogs/:id", async (req, res) => {
         });
         } else {
         res.status(200).json({
-            message: `Poor ${deletedDog.name} was put down :(`,
+            message: `${deletedDog.name} is dead, long live ${deletedDog.name} :(`,
             data: deletedDog,
         });
         }
